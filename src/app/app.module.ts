@@ -9,12 +9,17 @@ import { HomeComponent } from './views/home/home.component';
 
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
-import {MatButtonModule} from '@angular/material/button'; 
+import {MatButtonModule} from '@angular/material/button';
+import { GerenciarComponent } from './views/gerenciar/gerenciar.component';
+import {MatTabsModule} from '@angular/material/tabs';
+import { ImportarComponent } from './views/outros/importar/importar.component'; 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    GerenciarComponent,
+    ImportarComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +27,8 @@ import {MatButtonModule} from '@angular/material/button';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
